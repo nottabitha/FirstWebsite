@@ -1,0 +1,505 @@
+/*
+filename: style.css
+author: Tabitha Leimonis
+created: 16/03/2017
+last modified: 30/03/2017
+description: 
+*/
+
+/* Header applies to all pages */
+
+/* Inspiration for the menu design taken from https://www.w3schools.com/css/css_navbar.asp */
+/* 
+   Websites used to help inspire the header:
+   http://stackoverflow.com/questions/18839582/center-a-horizontal-css-menu
+   http://stackoverflow.com/questions/6008324/fade-effect-on-link-hover
+   https://www.w3schools.com/cssref/pr_font_font-size.asp
+*/
+nav li {
+	display: inline;
+	letter-spacing: 3px;
+	padding-right: .5em;
+	font-size: 27px;
+	float: left;
+}
+#nav li+li {
+	border-left: 2px solid #363636;
+}
+.logo {
+	position: absolute;
+	left: 30px;
+	top:5px;
+	width:100px;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+}
+nav ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	text-align: center;
+	margin: 0 auto;
+}
+.menu a {
+	text-align: center;
+	font-family: orator std,arial;
+	display: block;
+	padding: 0 30px;
+	color: #363636;
+	text-decoration: none;
+	font-size: 70%;
+	
+	transition: color 0.3s linear;
+}
+.menu a:hover {
+	color: #0099ff
+}
+#active {
+	color: #0099ff
+}
+header {
+	background-color: #f5f5f5;
+	width: 100%;
+	padding: 27px;
+	margin: 0px;
+}
+
+/* End of Header */
+
+/* Index Page 
+	Wallpaper taken from http://7-themes.com/6929129-bicycle-photography.html */
+#homepage {
+	background: gray url(../styles/images/wallpaper.jpg) no-repeat scroll left center;
+}
+#home h1 {
+	font-size: 40px;
+	text-align: center;
+	font-family: orator std,arial;
+	color: #0099ff;
+	font-weight: normal;
+	margin-top: 100px;
+}
+#home h3 {
+	text-align: center;
+	font-family: orator std,arial;
+	color: darkgray;
+	font-weight: normal;
+	margin-top: 70px;
+}
+#home p, li{
+	text-align: center;
+	font-family: orator std,arial;
+	color: black;
+}
+/* End of Home Page */
+
+/* Product Page */
+/*   
+	Websites used to help inspire the product page:
+	https://www.w3schools.com/css/css_table.asp
+*/
+#tables table {
+	margin: 0px auto;
+}
+#tables h2 {
+	font-size: 30px;
+	text-align: center;
+	font-family: orator std,arial;
+	color: #0099ff;
+	font-weight: normal;
+}
+.table-title {
+	background-color: #0099ff;
+	color: white;
+}
+.table-subheading {
+	background-color: #f5f5f5;
+	font-weight: normal;
+}
+#tables table {
+	border: 1px solid darkgray;
+	font-family: orator std,arial;
+}
+#tables table {
+	border-collapse: collapse;
+	width: 50%
+}
+#tables th, td {
+	text-align: center;
+	border-bottom: 1px solid darkgray;
+	border-top: 1px solid darkgray;
+}
+#tables th {
+	height: 25px;
+}
+#information aside {
+	border: 4px inset darkgray;
+	border-radius: 14px;
+	margin: 1em;
+	padding: 1em;
+	box-shadow: 10px 10px 5px #aaaaaa;
+	width: 25%;
+	float: right;
+	background:url(../styles/images/gradient.jpg);
+}
+#information {
+	font-family: orator std,arial;
+}
+#information h2 {
+	font-size: 30px;
+	font-weight: normal;
+	color: #0099ff;
+	text-align: center;
+}
+#bikeinfo {
+	text-align: center;
+}
+#tables h3 {
+	margin-top:50px;
+}
+#roadinfo {
+    width: 300px;
+    border: 10px double #0099ff;
+    padding: 25px;
+    margin: 25px;
+}
+#mountaininfo {
+    width: 300px;
+    border: 10px double #0099ff;
+    padding: 25px;
+    margin: 25px;
+}
+#cityinfo {
+    width: 300px;
+    border: 10px double #0099ff;
+    padding: 25px;
+    margin: 25px;
+}
+#hybridinfo {
+    width: 300px;
+    border: 10px double #0099ff;
+    padding: 25px;
+    margin: 25px;
+}
+#cruiserinfo {
+    width: 300px;
+    border: 10px double #0099ff;
+    padding: 25px;
+    margin: 25px;
+}
+#bmxinfo {
+    width: 300px;
+    border: 10px double #0099ff;
+    padding: 25px;
+    margin: 25px;
+}
+#roadinfo, #mountaininfo, #cityinfo {
+	text-align: center;
+	display: inline-block;
+	vertical-align:text-top;
+}
+#hybridinfo, #cruiserinfo, #bmxinfo {
+	text-align: center;
+	display: inline-block;
+	vertical-align:text-top;
+}
+#roadinfo h3, #mountaininfo h3, #cityinfo h3, #hybridinfo h3, #cruiserinfo h3, #bmxinfo h3 {
+	text-align: center;
+	font-weight: normal;
+	font-family: orator std,arial;
+}
+#imagemap {
+	text-align: center;
+}
+
+	
+
+/* End of Product Page */
+
+/* Enquire Page */
+
+#enquireform h3, p, h4 {
+	font-family: orator std,arial;
+	font-weight: normal;
+}
+
+/* Payment Page */
+
+#paymentform h3, p, h4 {
+	font-family: orator std,arial;
+	font-weight: normal;
+}
+/* About Page */
+	/* Websites used to inspire the About Page:
+	http://www.lovelycoding.org/2013/05/create-weekly-timetable-using-css-and-html.html
+	http://stackoverflow.com/questions/1713048/how-to-style-dt-and-dd-so-they-are-on-the-same-line
+	*/
+	
+#timetable h2 {
+	font-family: orator std,arial;
+	text-align: center;
+	font-weight: normal;
+	color: #363636;
+}
+#timetable  table{
+	font-family: orator std,arial;
+	margin: 0px auto;
+	position: relative;
+}
+#timetable  th, td {
+	margin:0;
+	text-align: center;
+	border-collapse: collapse;
+	outline: 1px solid darkgray;
+}
+#timetable  td {
+	padding: 5px 10px;
+	font-size: 12px;
+}
+#timetable  th {
+	background: #0099ff;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+}
+#timetable {
+	text-align: center;
+}
+#authordetails  h2 {
+	font-family: orator std,arial;
+	font-weight: normal;
+	text-align: center;
+	color: #363636;
+}
+#authordetails {
+	float: right;
+	text-align: center;
+}
+#authordetails {
+	font-family: orator std,arial;
+}
+#authordetails figure {
+  vertical-align: middle;
+  margin-bottom: 0.75em;
+}
+/* Definiton list alignment inspired from http://stackoverflow.com/questions/1713048/how-to-style-dt-and-dd-so-they-are-on-the-same-line */
+#authordetails dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0
+}
+#authordetails dt {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0
+}
+#authordetails dd {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0
+}
+#authordetails figure {
+	font-family: orator std,arial;
+	text-align: center;
+	float: right;
+	border: 10px double #0099ff;
+	background:  #f5f5f5;
+	margin-right: 140px;
+	margin-top: 50px;
+}
+#requirements1 {
+	text-align: left;
+	font-family: orator std,arial;
+	width: 20%;
+    border: 10px double #0099ff;
+    padding: 25px;
+    margin: 25px;
+	font-size: 12px;
+}
+#requirements2 {
+	text-align: left;
+	font-family: orator std,arial;
+	width: 20%;
+    border: 10px double #0099ff;
+    padding: 25px;
+    margin: 25px;
+	font-size: 12px;
+}
+#requirements {
+	text-align: center;
+}
+#requirements1 a {
+	color: #363636;
+	text-decoration: none;
+}
+#requirements2 a {
+	color: #363636;
+	text-decoration: none;
+}
+#requirements1 a:hover {
+	text-decoration: underline;
+}
+#requirements2 a:hover {
+	text-decoration: underline;
+}
+#requirements1, #requirements2 {
+	display: inline-block;
+	vertical-align: text-top;
+}
+#reflection {
+	float: left;
+	width: 80%;
+    border: 10px double #0099ff;
+    padding: 25px;
+	margin-left: 110px;
+}
+#reflection h3 {
+	text-align: center;
+	font-family: orator std,arial;
+	font-weight: normal;
+}
+#studentemail {
+	color: #0099ff;
+	text-decoration: none;
+}
+#authordetails p {
+	text-align: center;
+}
+#studentemail:hover {
+	text-decoration: underline;
+}
+
+.cos10011 {
+	background: #ff99ff;
+}
+.cos10003 {
+	background: #66ccff;
+}
+.tne10006 {
+	background: #99ff99;
+}
+.cos10009 {
+	background: #cc99ff;
+}
+
+/* End of About Page */
+
+/* Start of Enhancement Page */
+
+#enhancement1 {
+	font-family: orator std, arial;
+}
+#enhancement1 h2 {
+	text-align: center;
+	font-weight: normal;
+	color: #0099ff;
+}
+#enhancement1 li {
+	font-family: orator std, arial;
+	text-align: left;
+}
+#enhancement1 a {
+	color: #0099ff;
+	text-decoration: none;
+}
+#enhancement1 a:hover {
+	text-decoration: underline;
+}
+
+#enhancement2 h2 {
+	text-align: center;
+	font-weight: normal;
+	color: #0099ff;
+	font-family: orator std, arial;
+}
+#enhancement2 li {
+	font-family: orator std, arial;
+	text-align: left;
+}
+#enhancement2 a {
+	color: #0099ff;
+	text-decoration: none;
+}
+#enhancement2 a:hover {
+	text-decoration: underline;
+}
+
+#enhancement3 h2 {
+	text-align: center;
+	font-weight: normal;
+	color: #0099ff;
+	font-family: orator std, arial;
+}
+#enhancement3 li {
+	font-family: orator std, arial;
+	text-align: left;
+}
+#enhancement3 a {
+	color: #0099ff;
+	text-decoration: none;
+}
+#enhancement3 a:hover {
+	text-decoration: underline;
+}
+
+/* Enhancement 2 Page */
+
+#enhancement4 {
+	font-family: orator std, arial;
+}
+#enhancement4 h2 {
+	text-align: center;
+	font-weight: normal;
+	color: #0099ff;
+}
+#enhancement4 li {
+	font-family: orator std, arial;
+	text-align: left;
+}
+#enhancement4 a {
+	color: #0099ff;
+	text-decoration: none;
+}
+#enhancement4 a:hover {
+	text-decoration: underline;
+}
+
+/* Footer Applies to all pages */
+/*
+	Websites used to help inspire the footer:
+	http://stackoverflow.com/questions/5189238/how-to-make-a-footer-fixed-in-the-page-bottom
+*/
+ 
+footer p {
+	font-family: orator std,arial;
+	text-align: center;
+}
+footer {
+  height: 59px;
+  margin: 0 auto;
+  color: #f5f5f5;
+  clear: both;
+  padding: 2em 2em;
+  background: #363636;
+  position: relative;
+  top: 200px;
+}
+
+
+
+	
+
+	
+	

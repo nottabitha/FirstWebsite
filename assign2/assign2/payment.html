@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Provides bike hire for a wide range of bicycles at a low cost" />
+	<meta name="keywords" content="HTML5, CSS, Bike, Bicycle, Hire" />
+	<meta name="author" content="Tabitha Leimonis" />
+	<title>Payment</title>
+	<script src="scripts/part2.js"></script>
+	<link href= "styles/style.css" rel="stylesheet"/>
+	<!--<script src="scripts/enhancements.js"></script>-->
+	<!-- References to external CSS files-->
+</head>
+<body>
+
+	<header>
+		<figure><a href="index.html"> <img src="images/Tabitha_Bike_Hire1.png" alt="Tabitha's Bike Hire" class="logo" width="100" /></a></figure>
+		<!-- Bike Clipart taken from http://www.clipartpanda.com/categories/bicycle-clipart-->
+	<nav>
+		<ul id="nav">
+			<li class="menu"><a href="index.html">INDEX</a></li> 
+			<li class="menu"><a href="product.html">PRODUCT</a> </li>
+			<li class="menu"><a href="enquire.html">ENQUIRE</a></li>
+			<li class="menu"><a href="about.html">ABOUT</a></li>
+			<li class="menu"><a href="enhancements.html">ENHANCEMENTS</a></li>
+			<li class="menu"><a href="enhancements2.html">ENHANCEMENTS 2</a></li>
+		</ul>
+	</nav>
+	</header>
+
+<form id="paymentform" method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+	<fieldset>
+		<legend><h3>Your Payment</h3></legend>
+		<p>Your Name: <span id="confirm_name"></span></p>
+		<p>Email: <span id="confirm_email"></span></p>
+		<p>Address: <span id="confirm_address"></span></p>
+		<p>Contact Details: <span  id="confirm_contactdetails"></span></p>
+		<p>Phone: <span id="confirm_phone"></span></p>
+		<p>Order: <span  id="confirm_order"></span></p>
+		<p>Quantity: <span id="confirm_quantity"></span></p>
+		<p>Comments: <span id="confirm_comment"></span></p>
+		<p>Total Cost: $<span id="confirm_cost"></span></p>
+		<input type="hidden" name="fname" id="fname" />
+		<input type="hidden" name="lname" id="lname" />
+		<input type="hidden" name="email1" id="email1" />
+		<input type="hidden" name="street" id="street" />
+		<input type="hidden" name="suburb" id="suburb" />
+		<input type="hidden" name="state" id="state" />
+		<input type="hidden" name="postcode" id="postcode" />
+		<input type="hidden" name="contactdetails" id="contactdetails" />
+		<input type="hidden" name="phone1" id="phone1" />
+		<input type="hidden" name="bike" id="bike" />
+		<input type="hidden" name="quantity" id="quantity" />
+		<input type="hidden" name="extras" id="extras" />
+		<input type="hidden" name="comment" id="comment" />
+
+		<input type="hidden" name="cost" id="cost" />
+
+			<!-- Credit card inspiration from https://designmodo.com/create-credit-card-ui/ -->
+			<h3>Credit Card Details</h3>
+
+			<p>
+			<select name="cardtype" id="cardtype">
+				<option value="none">Please Select</option>
+				<option value="visa">Visa</option>
+				<option value="mastercard">Mastercard</option>
+				<option value="americanexpress">American Express</option>
+			</select>
+			</p>
+			<p><input type="text" name="cardname" placeholder="Name on card" id="cardname"/></p>
+			<p><input type="text" name="cardnumber" placeholder="Card Number" id="cardnumber"/></p>
+			<p>
+			<input type="text" placeholder="mm-yy" name="cardexpiry" id="cardexpiry" maxlength="5" size="5"/>
+			<input type="text" placeholder="CVV" name="cardcvv" id="cardcvv" maxlength="4" size="3"/>
+			</p>
+
+		<input type="submit" value="Check Out" />
+		<button type="button" id="cancelButton">Cancel Order</button>
+		<!--<button type="button" id="backButton">Back</button>-->
+    </fieldset>
+</form>
+	<footer>
+		<p>Created by Tabitha Leimonis</p>
+	</footer>
+</body>
+
+</html>

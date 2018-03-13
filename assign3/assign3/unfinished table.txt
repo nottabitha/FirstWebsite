@@ -1,0 +1,29 @@
+CREATE TABLE orders (
+	order_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+    	order_cost FLOAT NOT NULL ,
+    	order_status ENUM('Pending', 'Fulfilled', 'Paid', 'Archived') default 'Pending' NOT NULL ,
+	order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ,
+	firstname VARCHAR(25) NOT NULL ,
+	lastname VARCHAR(25) NOT NULL ,
+	email VARCHAR(25) NOT NULL ,
+	street VARCHAR(40) NOT NULL ,
+	suburb VARCHAR(20) NOT NULL ,
+	postcode VARCHAR(4) NOT NULL ,
+	state ENUM('VIC', 'NSW', 'QLD', 'TAS', 'SA', 'NT', 'WA', 'ACT') default 'VIC' NOT NULL ,
+	contact_details VARCHAR(10) NOT NULL ,
+	phone VARCHAR(10) NOT NULL ,
+	bike ENUM('Strattos', 'Fixie', 'Surge', 'Totem', 'Sierra', 'Path1', 'Heist', 'Rove', 'Apollo', 'Merida', 'Avalanche', 'Jet') NOT NULL ,
+	extras VARCHAR(10) NOT NULL , 
+	quantity INT NOT NULL , 
+	comment VARCHAR(25) NOT NULL ,
+	cardtype ENUM('Visa', 'Mastercard', 'AmericanExpress') NOT NULL ,
+	cardname VARCHAR(40) NOT NULL ,
+	cardnumber VARCHAR(16) NOT NULL ,
+	cardexpiry VARCHAR(5) NOT NULL ,
+	cardcvv VARCHAR(4) NOT NULL 
+);
+
+user_name admin
+user_pass admin
+user_name tabitha
+user_pass isawesome

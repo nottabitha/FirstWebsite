@@ -1,0 +1,1 @@
+location: fix_order.php? fname=$fname&lname=$lname&email1=$email1&street=$street&suburb=$suburb&state=$state&postcode=$postcode&contactdetails=$contactdetails&phone1=$phone1&bike=$bike&quantity=$quantity&errMsg=$errMsg
